@@ -19,7 +19,7 @@ Middleware is available in both SSG and SSR Astro projects.
 
     ```js title="src/middleware.js"
     export function onRequest (context, next) {
-        // intercept response data from a request with `context.request`
+        // intercept response data from a request (see `context.request`)
         // optionally, transform the response by modifying `locals`
         context.locals.title = "New title";
 
